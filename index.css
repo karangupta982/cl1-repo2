@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: visible;
+}
+  .holistic-education {
+    background: #F3EEDF;
+    width:100vw;
+  }
+  
+  .content-wrapper {
+    margin: 5vh 6vw;
+    display: flex;
+    gap: 40px;
+    position: relative;
+  }
+  
+  .text-container {
+    
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 20px;
+    
+  }
+  .accordion-title{
+    font-size: 28px;
+    color: #6C2850;
+  }
+  .accordion-description{
+    font-size: 20px;
+  }
+
+  .accordion-content{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+  
+  .image-container {
+    padding-top: 7vh;
+    flex: 1;
+    position: sticky;
+    top: 0;
+    height: 100%;
+  }
+  
+  .accordion-item {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 2.5vw;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .image-container img.active {
+    display: block;
+  }
+
+  #upper{
+    background: white;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #lower{
+    background: white;  
+    height: 100vh;
+    width: 100vw;
+  }
+
+.image-container img {
+    opacity: 0;  
+}
+
+.image-container img.active {
+    opacity: 1; 
+}
+
+.number{
+    font-size: 48px;
+    font-weight: 500;
+    color: black;
+}
