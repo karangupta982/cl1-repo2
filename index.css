@@ -17,7 +17,7 @@
   }
   
   .text-container {
-    
+    height: 270vh;
     flex: 1;
     overflow-y: auto;
     padding-right: 20px;
@@ -32,7 +32,6 @@
   }
 
   .accordion-content{
-    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     gap: 1.5vh;
@@ -65,6 +64,13 @@
     display: block;
   }
 
+  .accordion-item.active {
+  opacity: 1; 
+}
+
+.accordion-item.inactive {
+  opacity: 0.5; 
+}
   #upper{
     background: white;
     height: 100vh;
@@ -81,12 +87,13 @@
     opacity: 0;  
 }
 
-.image-container img.active {
+.image-container img.active{
     opacity: 1; 
 }
+
 
 .number{
     font-size: 48px;
     font-weight: 500;
     color: black;
-}
+} 
